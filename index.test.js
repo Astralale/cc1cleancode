@@ -9,9 +9,9 @@ describe('lancementDes', () => {
             expect(resultat.valeurOccurence).toEqual([1, 1, 2, 1]);
         });
     */
-    test('Verifie que je recupere un brelan', () => {
-        const lance = [1, 2, 3, 3, 3];
-        expect(calculerScore(lance)).toEqual(28);
+    test('Verifie que je recupere un carré', () => {
+        const lance = [1, 3, 3, 3, 3];
+        expect(calculerScore(lance)).toEqual(35);
     });
 
 });

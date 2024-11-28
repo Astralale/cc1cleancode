@@ -13,7 +13,9 @@ function calculerScore(lance){
     if (valeurOccurence.includes(3)){
         return 28;
     }
-
+    if (valeurOccurence.includes(4)){
+        return 35;
+    }
 
 }
 module.exports = calculerScore;
