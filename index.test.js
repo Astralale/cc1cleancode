@@ -39,4 +39,8 @@ describe('lancementDes', () => {
         expect(calculerScore(lance)).toEqual(50);
     });
 
+    test('Verifie que je recupere une chance', () => {
+        const lance = [1,3, 3, 6, 6];
+        expect(calculerScore(lance)).toEqual(19);
+    });
 });

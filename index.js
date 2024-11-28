@@ -38,7 +38,12 @@ function calculerScore(lance){
     if (valeurOccurence.includes(3)){
         return 28;
     }
+    let total=0;
 
+    for (let i = 0; i < valeurOccurence.length; i++) {
+        total+=valeur[i]*valeurOccurence[i]
+    }
+    return total;
 
 
 
