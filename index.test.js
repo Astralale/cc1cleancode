@@ -10,37 +10,37 @@ describe('lancementDes', () => {
         });
     */
     test('Verifie que je recupere un brelan', () => {
-        const lance = [1, 2, 3, 3, 3];
-        expect(calculerScore(lance)).toEqual(28);
+        const lancersDes = [1, 2, 3, 3, 3];
+        expect(calculerScore(lancersDes)).toEqual(28);
     });
 
     test('Verifie que je recupere un carré', () => {
-        const lance = [1, 3, 3, 3, 3];
-        expect(calculerScore(lance)).toEqual(35);
+        const lancersDes = [1, 3, 3, 3, 3];
+        expect(calculerScore(lancersDes)).toEqual(35);
     });
 
     test('Verifie que je recupere un full', () => {
-        const lance = [1,1, 3, 3, 3];
-        expect(calculerScore(lance)).toEqual(30);
+        const lancersDes = [1,1, 3, 3, 3];
+        expect(calculerScore(lancersDes)).toEqual(30);
     });
 
     test('Verifie que je recupere une grande suite avec une liste dans l\'ordre', () => {
-        const lance = [1,2, 3, 4, 5];
-        expect(calculerScore(lance)).toEqual(40);
+        const lancersDes = [1,2, 3, 4, 5];
+        expect(calculerScore(lancersDes)).toEqual(40);
     });
 
     test('Verifie que je recupere une grande suite avec une liste dans le desordre', () => {
-        const lance = [1,4, 5, 2, 3];
-        expect(calculerScore(lance)).toEqual(40);
+        const lancersDes = [1,4, 5, 2, 3];
+        expect(calculerScore(lancersDes)).toEqual(40);
     });
 
     test('Verifie que je recupere un YAMS', () => {
-        const lance = [3,3, 3, 3, 3];
-        expect(calculerScore(lance)).toEqual(50);
+        const lancersDes = [3,3, 3, 3, 3];
+        expect(calculerScore(lancersDes)).toEqual(50);
     });
 
     test('Verifie que je recupere une chance', () => {
-        const lance = [1,3, 3, 6, 6];
-        expect(calculerScore(lance)).toEqual(19);
+        const lancersDes = [1,3, 3, 6, 6];
+        expect(calculerScore(lancersDes)).toEqual(19);
     });
 });
