@@ -7,9 +7,25 @@ function calculerScore(lance){
         return accumulateur;
     }, {});
 
-    const valeurOccurence=Object.values(compteur);
-    const valeur=Object.keys(compteur);
+    const valeurOccurence=Object.values(compteur)
+    const valeur=Object.keys(compteur)
+        .map(Number)
+        .sort((a, b) => a - b);
 
+    if (valeurOccurence.length===5){
+        let grandeSuite=true;
+        for (let i = 0; i < valeurOccurence.length-1; i++) {
+            if (valeur[i] === valeur[i + 1] - 1){
+                grandeSuite=true;
+            }
+            else{
+                grandeSuite=false;
+            }
+        }
+        if (grandeSuite){
+            return 40;
+        }
+    }
     if (valeurOccurence.includes(4)){
         return 35;
     }

@@ -24,4 +24,14 @@ describe('lancementDes', () => {
         expect(calculerScore(lance)).toEqual(30);
     });
 
+    test('Verifie que je recupere une grande suite avec une liste dans l\'ordre', () => {
+        const lance = [1,2, 3, 4, 5];
+        expect(calculerScore(lance)).toEqual(40);
+    });
+
+    test('Verifie que je recupere une grande suite avec une liste dans le desordre', () => {
+        const lance = [1,4, 5, 2, 3];
+        expect(calculerScore(lance)).toEqual(40);
+    });
+
 });
