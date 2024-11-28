@@ -9,7 +9,11 @@ function calculerScore(lance){
 
     const valeurOccurence=Object.values(compteur);
     const valeur=Object.keys(compteur);
-    return {valeur, valeurOccurence};
+
+    if (valeurOccurence.includes(3)){
+        return 28;
+    }
+
 
 }
 module.exports = calculerScore;
