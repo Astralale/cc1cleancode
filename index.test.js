@@ -34,4 +34,9 @@ describe('lancementDes', () => {
         expect(calculerScore(lance)).toEqual(40);
     });
 
+    test('Verifie que je recupere un YAMS', () => {
+        const lance = [3,3, 3, 3, 3];
+        expect(calculerScore(lance)).toEqual(50);
+    });
+
 });

@@ -12,6 +12,9 @@ function calculerScore(lance){
         .map(Number)
         .sort((a, b) => a - b);
 
+    if (valeurOccurence.includes(5)){
+        return 50;
+    }
     if (valeurOccurence.length===5){
         let grandeSuite=true;
         for (let i = 0; i < valeurOccurence.length-1; i++) {
